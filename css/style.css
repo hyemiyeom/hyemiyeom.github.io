@@ -8,8 +8,6 @@
   font-style: normal;
 }
 
-/* 폰트 : "Fredericka the Great" ,GmarketSansMedium */
-/* reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -261,6 +259,29 @@ section{
   width: 135px;
 }
 
+/* SECTION project BTN */
+#project .pro_box1 .btn,
+#project .pro_box2 .btn{
+  width: 150px;
+  height: 60px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+}
+#project .pro_box1 .btn:hover,
+#project .pro_box2 .btn:hover{
+  background-color: #333;
+}
+#project .pro_box2 .btn a{
+  display: block;
+}
+#project .pro_box1 .btn:hover a,
+#project .pro_box2 .btn:hover a{
+  color: #fff;
+}
 /* SECTION project */
 #project{
   width: 100%;
