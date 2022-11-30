@@ -534,7 +534,6 @@ section{
 #otherDesign .designBox ul li div.screen{
   width: 100%;  
   height: 100%;
-
 }
 #otherDesign .designBox ul li div.screen::after{
   content: "";
@@ -564,7 +563,7 @@ section{
 }
 #otherDesign .designBox ul li .screen .bottom{
   position: absolute;
-  bottom: -15%;
+  bottom: -25%;
   left: 30px;
   z-index: 2;
   color:#fff;
@@ -614,13 +613,15 @@ footer{
 
   /* INTRO */
   #intro .cirle .line:nth-child(1){
-    top: 64%;
+    display: none;
   }
   #intro .cirle .line:nth-child(2){
-    top: 54%;
+    display: none;
   }
   #intro .cirle .introIcon{
-    top: 55%;
+    width: 350px;
+    top: 20%;
+    opacity: .5;
   }
   /* SECTION */
   section{
@@ -701,7 +702,13 @@ footer{
     top: 40%;
     text-align: center;
   }
-  #project .All_pro   .pro_right .textBox .onColor .colorBox{
+  #project .All_pro  .pro_right .textBox{
+    top: 43%;
+  }
+  #project .All_pro  .pro_right .textBox >div{
+    padding-bottom: 10px;
+  }
+  #project .All_pro  .pro_right .textBox .onColor .colorBox{
     width: 470px;
     margin: 20px auto;
   }
@@ -713,19 +720,169 @@ footer{
   #project .pro_box2{
     margin-top: 70px;
   }
-
   /* OTHERDESIGIN */
-  #otherDesign{
+    #otherDesign{
+      width: 100%;
+      position: relative;
+    }
+    #otherDesign .inner{
+      height: 2300px;
+      width: 100%;
+    }
+    #otherDesign .designBox{
+      width: 100%;
+    }
+    #otherDesign .designBox ul{
+      width: 100%;
+    }
+    #otherDesign .designBox ul li{
+      display: block;
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+    }
+}
+/* 모바일 버전 */
+@media all and (max-width:767px){
+  header{
     width: 100%;
-    height: 700px;
+  }
+  header #gnb li{
+    display: none;
+  }
+  input[id="menuicon"] + label{
+    display: block;
+  }
+    /* INTRO */
+    #intro .cirle .line{
+      display: none;
+    }
+    #intro .cirle .introIcon{
+      display: none;
+    }
+    #intro .introText h1{
+      font-size: 5rem;
+    }
+    /* SECTION */
+  section{
+    width: 100%;
+    height: 100%;
     position: relative;
   }
-  #otherDesign .inner{
-    height: 100%;
+  #about{
+    width: 100%;
+    height: 1250px;
+  }
+  #about .inner{
     width: 100%;
   }
-
+  #about .about_me{
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #about .about_me .wave-one{
+    left: 30%;
+  }
+  #about .about_me .wave-two {
+    left: 28%;
+  }
+  #about .about_me .wave-three{
+    left: 38%;
+  }
+  #about .about_me .about_sub{
+    text-align: center;
+  }
+  #about .about_right{
+    width: 100%;
+    top: 80%;
+    left: 0;
+  }
+  #about .about_right ul{
+    text-align: center;
+  }
+  #about .about_right ul:nth-child(3){
+    text-align: start;
+    margin-left: 35%;
+  }
+  #about .about_right .skills_line,
+  #about .about_right .skills_level{
+    bottom: 0;
+    left: 55%;
+  }
+  /* PROJECT */
+  #project{
+    width: 100%;
+    height: 2360px;
+    margin-bottom: 50px;
+  }
+  #project .inner{
+    width: 100%;
+    height: 100%;
+  }
+  #project .All_pro{
+    width: 100%;
+    height: 1000px;
+  }
+  #project .All_pro .left_pro {
+    width: 100%;
+    height: 400px;
+  }
+  #project .All_pro .left_pro ul li{
+    width: 478px;
+    height: 285px;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #project .All_pro .pro_right{
+    width: 100%;
+    height: 580px;
+    top: 40%;
+    text-align: center;
+  }
+  #project .All_pro  .pro_right .textBox{
+    top: 43%;
+  }
+  #project .All_pro  .pro_right .textBox >div{
+    padding-bottom: 10px;
+  }
+  #project .All_pro  .pro_right .textBox .onColor .colorBox{
+    width: 470px;
+    margin: 20px auto;
+  }
+  #project .pro_box1 .btn,
+  #project .pro_box2 .btn{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #project .pro_box2{
+    margin-top: 70px;
+  }
+    /* OTHERDESIGIN */
+    #otherDesign{
+      width: 100%;
+      position: relative;
+    }
+    #otherDesign .inner{
+      height: 1800px;
+      width: 100%;
+    }
+    #otherDesign .designBox{
+      width: 100%;
+    }
+    #otherDesign .designBox ul{
+      width: 100%;
+    }
+    #otherDesign .designBox ul li{
+      display: block;
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+    }
 }
-
 
 
