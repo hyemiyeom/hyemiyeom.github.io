@@ -55,6 +55,76 @@ header #gnb li a{
 header #gnb li:hover a{
   color: rgb(0, 68, 109);
 }
+/* 메뉴아이콘 */
+input[id="menuicon"]{
+  display: none;
+}
+input[id="menuicon"] + label{
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+input[id="menuicon"] + label span{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #000;
+  transition: all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1){
+  top: 0;
+}
+input[id="menuicon"] + label span:nth-child(2){
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3){
+  bottom: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(1){
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2){
+  opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3){
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div.sidebar{
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  transition: all .35s;
+}
+input#menuicon:checked +label +div{
+  right: 0;
+}
+div.sidebar .sidebar_gnb{
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+div.sidebar .sidebar_gnb>li{
+  text-align: end;
+  font-size: 30px;
+  margin: 30px 0px;
+  font-weight: bold;
+}
+div.sidebar .sidebar_gnb>li a{
+  color: rgb(9, 134, 183);
+}
 
 /* SECTION INTRO */
 section{
@@ -77,7 +147,6 @@ section{
   height: 2px;
   background-color: #fff;
   position: absolute;
-
 }
 #intro .cirle .line:nth-child(1){
   top: 60%;
@@ -531,8 +600,132 @@ footer{
   padding: 40px;
 }
 
+/* 태블릿 버전 */
+@media all and (min-width:769px) and (max-width:1024px){
+  header{
+    width: 100%;
+  }
+  header #gnb li{
+    display: none;
+  }
+  input[id="menuicon"] + label{
+    display: block;
+  }
 
+  /* INTRO */
+  #intro .cirle .line:nth-child(1){
+    top: 64%;
+  }
+  #intro .cirle .line:nth-child(2){
+    top: 54%;
+  }
+  #intro .cirle .introIcon{
+    top: 55%;
+  }
+  /* SECTION */
+  section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #about{
+    width: 100%;
+    height: 1250px;
+  }
+  #about .inner{
+    width: 100%;
+  }
+  #about .about_me{
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #about .about_me .wave-one{
+    left: 36%;
+  }
+  #about .about_me .wave-two {
+    left: 35%;
+  }
+  #about .about_me .wave-three{
+    left: 38%;
+  }
+  #about .about_me .about_sub{
+    text-align: center;
+  }
+  #about .about_right{
+    width: 100%;
+    top: 80%;
+    left: 0;
+  }
+  #about .about_right ul{
+    text-align: center;
+  }
+  #about .about_right ul:nth-child(3){
+    text-align: start;
+    margin-left: 35%;
+  }
+  #about .about_right .skills_line,
+  #about .about_right .skills_level{
+    bottom: 0;
+    left: 55%;
+  }
+  /* PROJECT */
+  #project{
+    width: 100%;
+    height: 2360px;
+    margin-bottom: 50px;
+  }
+  #project .inner{
+    width: 100%;
+    height: 100%;
+  }
+  #project .All_pro{
+    width: 100%;
+    height: 1000px;
+  }
+  #project .All_pro .left_pro {
+    width: 100%;
+    height: 400px;
+  }
+  #project .All_pro .left_pro ul li{
+    width: 478px;
+    height: 285px;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #project .All_pro .pro_right{
+    width: 100%;
+    height: 580px;
+    top: 40%;
+    text-align: center;
+  }
+  #project .All_pro   .pro_right .textBox .onColor .colorBox{
+    width: 470px;
+    margin: 20px auto;
+  }
+  #project .pro_box1 .btn,
+  #project .pro_box2 .btn{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #project .pro_box2{
+    margin-top: 70px;
+  }
 
+  /* OTHERDESIGIN */
+  #otherDesign{
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  #otherDesign .inner{
+    height: 100%;
+    width: 100%;
+  }
+
+}
 
 
 

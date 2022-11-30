@@ -25,17 +25,8 @@ $(document).ready(function () {
     $(".panel2>li").eq(list).stop().fadeIn();
   }, 3000);
 
-  // top버튼
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 600) {
-  //     $(".bottom_up").stop().animate({ opacity: 1 }, 200);
-  //   } else {
-  //     $(".bottom_up").stop().animate({ opacity: 0 }, 200);
-  //   }
-  // });
-  // $(".topbtn").click(function () {
-  //   $("html, body").stop().animate({ scrollTop: 0 }, 2000);
-  //   return false;
-  // });
 
+  $(".li.bars").click(function(){
+    $("li.bars ul").css("display:block");
+  });
 });
