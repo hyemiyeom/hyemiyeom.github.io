@@ -127,44 +127,29 @@ div.sidebar .sidebar_gnb>li a{
 }
 
 /* SECTION INTRO */
-section{
-  position: relative;
-  top: 0;
-}
 #intro{
   width: 100%;
-  background-color: #000;
-  position: relative;
-  overflow: hidden;
+  background-color: rgb(20, 20, 20);
 }
 #intro .inner{
-  width: 1400px;
+  width: 80%;
   height: 100vh;
-  margin: 0 auto;
-}
-#intro .cirle .line{
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-}
-#intro .cirle .line:nth-child(1){
-  top: 60%;
-  left: 50%;
-}
-#intro .cirle .line:nth-child(2){
-  top: 50%;
-  right: 50%;
+  margin: auto;
+  position: relative;
 }
 #intro .cirle .introIcon{
-  width: 150px;
+  width: 160px;
+  border-radius: 50%;
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 30%;
+  right: 20%;
   animation: rotate linear 15s alternate infinite;
 }
 #intro .cirle .introIcon img{
-  width: 100%;
+  width: 20rem;
+  position: relative;
+  top: 3px;
+  left: -1px;
 }
 @keyframes rotate{
   from{
@@ -178,24 +163,71 @@ section{
   width: 100%;
 }
 #intro .introText h1{
-  color: rgb(255, 255, 255);
-  font-size: 4rem;
+  color: #000;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, .99); ;
+  font-size: 5rem;
   text-align: start;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.scroll {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll p{
+  width: 100%;
+  text-align:center;
+  color: #fff;
+}
+.scroll p:hover{
+  text-shadow: 0px 0px 10px #fff;
+}
+.scroll .mouse{
+  width: 50px;
+  height: 80px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -25px;
+}
+.scroll .mouse::after{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(215, 215, 215);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -4px;
+  animation: scroll 2s linear infinite;
+}
+@keyframes scroll{
+  from{
+    top: 50px;
+  }
+  to{
+    top: 5px;
+  }
+}
 /*  ABOUT  */
 #about{ 
   width: 100%;
   background-color: rgb(20, 20, 20);
 }
 #about .inner{
-  width: 1100px;
-  height: 100vh;
-  margin: 0 auto;
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  padding-top: 120px;
   position:relative;
 }
 #about h1{
@@ -204,10 +236,11 @@ section{
   color: #fff;
 }
 #about .about_me{
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translate(0,-50%);
+  width: 50%;
+  margin-top: 50px;
+  padding: 50px 0;
+  float: left;
+  position: relative;
 }
 #about .about_me img{
   width: 250px;
@@ -225,16 +258,16 @@ section{
 #about .about_me .wave-one {
   width: 280px;
   height: 250px;
-  left: 20%;
-  top: 0%;
+  left: 30%;
+  top: 10%;
   animation: move 3s infinite linear;
   background-color: rgba(255, 255, 255, 0.311);
 }
 #about .about_me .wave-two {
   width: 250px;
   height: 250px;
-  left: 17%;
-  top: 2%;
+  left: 28%;
+  top: 11%;
   animation: move 3s infinite linear;
   background-color: rgba(144, 174, 240, 0.339);
   animation-delay: .2s;
@@ -242,11 +275,11 @@ section{
 #about .about_me .wave-three{
   width: 240px;
   height: 240px;
-  left: 22%;
-  top: 0%;
+  left: 32%;
+  top: 8%;
   animation: move 3s infinite linear;
   background-color: rgba(253, 181, 147, 0.24);
-  animation-delay: .2s;
+  animation-delay: .3s;
 }
 @keyframes move{
   100% {
@@ -265,17 +298,15 @@ section{
   font-weight: bold;
 }
 #about .about_me .about_sub{
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1rem;
   color: #fff;
-  padding-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 #about .about_right{
+  width: 50%;
+  margin-top: 50px;
   color: #fff;
-  position: absolute;
-  right: 7%;
-  top: 20%;
+  float: right;
 }
 #about .about_right .tit{
   font-size: 23px;
@@ -292,39 +323,40 @@ section{
   font-weight: normal;
   font-size: 15px;
 }
-#about .about_right .skills_line{
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
+#about .about_right .skills li{
+  position: relative;
 }
-#about .about_right .skills_line ul li{
+#about .about_right .skills li:not(:first-child)::before{
+  content: "";
+  display: block;
   width: 200px;
   height: 20px;
   background-color: #bbb;
   margin-bottom: 15px;
-  text-indent: -99999px;
-}
-#about .about_right .skills_level{
   position: absolute;
-  bottom: 5px;
-  left: 142px;
+  left: 160px;
+  top: 0;
 }
-#about .about_right .skills_level ul li{
+#about .about_right .skills li:not(:first-child):after{
+  content: "";
+  display: block;
   height: 20px;
   background-color: #244fbb;
   margin-bottom: 15px;
-  text-indent: -99999px;
+  position: absolute;
+  left: 160px;
+  top: 0;
 }
-#about .about_right .skills_level ul li:nth-child(1){
+#about .about_right .skills li:nth-child(2):after{
   width: 150px;
 }
-#about .about_right .skills_level ul li:nth-child(2){
+#about .about_right .skills li:nth-child(3):after{
   width: 145px;
 }
-#about .about_right .skills_level ul li:nth-child(3){
+#about .about_right .skills li:nth-child(4):after{
   width: 125px;
 }
-#about .about_right .skills_level ul li:nth-child(4){
+#about .about_right .skills li:nth-child(5):after{
   width: 135px;
 }
 
@@ -356,7 +388,7 @@ section{
   width: 100%;
 }
 #project .inner{
-  width: 1400px;
+  width: 80%;
   margin: 0 auto;
   padding: 100px 0px;
 }
@@ -382,28 +414,39 @@ section{
 }
 #project .All_pro .left_pro{
   width: 50%;
+  height: 400px;
+  padding-top: 30px;
+  float: left;
+  position: relative;
+}
+#project .All_pro .left_pro .pro_bg{
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#project .All_pro .left_pro .pro_bg img{
+  width: 100%;
   height: 100%;
-  background-image: url(../images/pro_bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #project .All_pro .left_pro ul{
-  position: relative;
-  width: 585px;
-  height: 355px;
-  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 90%;
 }
 #project .All_pro .left_pro ul li{
-  width: 597px;
-  height: 359px;
-  margin-top: 11px;
+  width: 96%;
+  height: 100%;
   border-radius: 10px 10px 0 0;
   background-size: cover;
   background-position: center;
   position: absolute;
-  top:1px;
-  left: -5px;
+  top:0%;
+  left:2%;
   display: none;
   text-indent: -9999px;
 }
@@ -436,9 +479,8 @@ section{
 #project .All_pro .pro_right{
   width: 50%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  padding-bottom: 100px;
+  float: right;
 }
 #project .All_pro  .pro_right .textBox{
   position: relative;
@@ -507,9 +549,10 @@ section{
   background-color: rgb(0, 0, 0);
 }
 #otherDesign .inner{
-  width: 1400px;
+  width: 80%;
   height: 100%;
-  margin: 0 auto;
+  padding: 100px 0;
+  margin: auto;
 }
 #otherDesign h1{
   color: #fff;
@@ -590,7 +633,6 @@ section{
 #otherDesign .designBox ul li:nth-child(3):hover .bottom{
   bottom: 62%;
 }
-
 /* FOOTER */
 footer{
   width: 100%;
@@ -599,7 +641,9 @@ footer{
   padding: 40px;
 }
 
-/* 태블릿 버전 */
+
+
+/* 태블릿 버전*/
 @media all and (min-width:769px) and (max-width:1024px){
   header{
     width: 100%;
@@ -612,16 +656,11 @@ footer{
   }
 
   /* INTRO */
-  #intro .cirle .line:nth-child(1){
-    display: none;
-  }
-  #intro .cirle .line:nth-child(2){
+  #intro .cirle .line{
     display: none;
   }
   #intro .cirle .introIcon{
-    width: 350px;
-    top: 20%;
-    opacity: .5;
+    display: none;
   }
   /* SECTION */
   section{
@@ -635,29 +674,34 @@ footer{
   }
   #about .inner{
     width: 100%;
+    /* padding-top: 0px; */
   }
   #about .about_me{
     width: 100%;
-    top: 20%;
+    top:0;
     left: 50%;
+    padding-top: 0px;
+    margin-top: 0px;
     transform: translateX(-50%);
   }
-  #about .about_me .wave-one{
-    left: 36%;
+  #about .about_me .waveBox{
+    display: none;
   }
-  #about .about_me .wave-two {
-    left: 35%;
-  }
-  #about .about_me .wave-three{
-    left: 38%;
+  #about .about_me .about_title{
+    margin-bottom: 20px;
   }
   #about .about_me .about_sub{
-    text-align: center;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #about .about_me .about_sub br{
+    display: none;
   }
   #about .about_right{
+    position: absolute;
     width: 100%;
-    top: 80%;
-    left: 0;
+    clear:both;
+    position: relative;
   }
   #about .about_right ul{
     text-align: center;
@@ -674,7 +718,7 @@ footer{
   /* PROJECT */
   #project{
     width: 100%;
-    height: 2360px;
+    height: 2800px;
     margin-bottom: 50px;
   }
   #project .inner{
@@ -684,26 +728,39 @@ footer{
   #project .All_pro{
     width: 100%;
     height: 1000px;
+    margin-top: 100px;
+    padding: 50px 10px 0;
+    flex-direction: column;
+    position: relative;
+  }
+  #project .pro_box2{
+    margin-top: 300px;
   }
   #project .All_pro .left_pro {
-    width: 100%;
-    height: 400px;
+    width: 100%; 
   }
-  #project .All_pro .left_pro ul li{
-    width: 478px;
-    height: 285px;
-    top: -3px;
+  #project .All_pro .left_pro .pro_bg{
+    width: 90%;
+    height: 500px;
     left: 50%;
     transform: translateX(-50%);
   }
+  #project .All_pro .left_pro ul{
+    width: 90%;
+    height: 360px;
+    left: 50%;
+  }
+  #project .All_pro .left_pro ul li{  
+    width: 97%;
+    height: 100%;
+  }
   #project .All_pro .pro_right{
     width: 100%;
-    height: 580px;
-    top: 40%;
-    text-align: center;
+    position: relative;
+    top: 25%;
   }
   #project .All_pro  .pro_right .textBox{
-    top: 43%;
+    text-align: center;
   }
   #project .All_pro  .pro_right .textBox >div{
     padding-bottom: 10px;
@@ -717,16 +774,12 @@ footer{
     left: 50%;
     transform: translateX(-50%);
   }
-  #project .pro_box2{
-    margin-top: 70px;
-  }
   /* OTHERDESIGIN */
     #otherDesign{
       width: 100%;
       position: relative;
     }
     #otherDesign .inner{
-      height: 2300px;
       width: 100%;
     }
     #otherDesign .designBox{
@@ -743,7 +796,8 @@ footer{
       margin-bottom: 30px;
     }
 }
-/* 모바일 버전 */
+
+/* 모바일버전 */
 @media all and (max-width:767px){
   header{
     width: 100%;
@@ -761,10 +815,7 @@ footer{
     #intro .cirle .introIcon{
       display: none;
     }
-    #intro .introText h1{
-      font-size: 4rem;
-    }
-    /* SECTION */
+      /* SECTION */
   section{
     width: 100%;
     height: 100%;
@@ -776,41 +827,51 @@ footer{
   }
   #about .inner{
     width: 100%;
+    /* padding-top: 0px; */
   }
   #about .about_me{
     width: 100%;
-    top: 20%;
+    top:0;
     left: 50%;
+    padding-top: 0px;
+    margin-top: 0px;
     transform: translateX(-50%);
   }
   #about .about_me .waveBox{
     display: none;
   }
+  #about .about_me .about_title{
+    margin-bottom: 20px;
+  }
   #about .about_me .about_sub{
-    text-align: start;
-    font-size: 16px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #about .about_me .about_sub br{
+    display: none;
   }
   #about .about_right{
+    position: absolute;
     width: 100%;
-    top: 80%;
-    left: 0;
+    clear:both;
+    position: relative;
   }
   #about .about_right ul{
     text-align: center;
   }
   #about .about_right ul:nth-child(3){
     text-align: start;
-    margin-left: 20%;
+    padding: 0 20%;
   }
   #about .about_right .skills_line,
   #about .about_right .skills_level{
     bottom: 0;
-    left: 55%;
+    left: 45%;
   }
   /* PROJECT */
   #project{
     width: 100%;
-    height: 2360px;
+    height: 2800px;
     margin-bottom: 50px;
   }
   #project .inner{
@@ -820,26 +881,39 @@ footer{
   #project .All_pro{
     width: 100%;
     height: 1000px;
+    margin-top: 100px;
+    padding: 50px 10px 0;
+    flex-direction: column;
+    position: relative;
+  }
+  #project .pro_box2{
+    margin-top: 300px;
   }
   #project .All_pro .left_pro {
-    width: 100%;
-    height: 400px;
+    width: 100%; 
   }
-  #project .All_pro .left_pro ul li{
-    width: 468px;
-    height: 282px;
-    top: 1px;
-    left: 41%;
+  #project .All_pro .left_pro .pro_bg{
+    width: 80%;
+    height: 400px;
+    left: 50%;
     transform: translateX(-50%);
+  }
+  #project .All_pro .left_pro ul{
+    width: 80%;
+    height: 285px;
+    left: 50%;
+  }
+  #project .All_pro .left_pro ul li{  
+    width: 97%;
+    height: 100%;
   }
   #project .All_pro .pro_right{
     width: 100%;
-    height: 580px;
-    top: 40%;
-    text-align: center;
+    position: relative;
+    top: 15%;
   }
   #project .All_pro  .pro_right .textBox{
-    top: 43%;
+    text-align: center;
   }
   #project .All_pro  .pro_right .textBox >div{
     padding-bottom: 10px;
@@ -853,16 +927,12 @@ footer{
     left: 50%;
     transform: translateX(-50%);
   }
-  #project .pro_box2{
-    margin-top: 70px;
-  }
-    /* OTHERDESIGIN */
+  /* OTHERDESIGIN */
     #otherDesign{
       width: 100%;
       position: relative;
     }
     #otherDesign .inner{
-      height: 1800px;
       width: 100%;
     }
     #otherDesign .designBox{
@@ -879,5 +949,3 @@ footer{
       margin-bottom: 30px;
     }
 }
-
-
