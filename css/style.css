@@ -747,23 +747,21 @@ footer{
   /* PROJECT */
   #project{
     width: 100%;
-    height: 2800px;
-    margin-bottom: 50px;
+    height: 4010px;
   }
   #project .inner{
     width: 100%;
-    height: 100%;
+    height: 3000px;
+    background-color: wheat;
   }
   #project .All_pro{
     width: 100%;
-    height: 1000px;
+    height: 42%;
+    background-color: thistle;
     margin-top: 100px;
     padding: 50px 10px 0;
     flex-direction: column;
     position: relative;
-  }
-  #project .pro_box2{
-    margin-top: 300px;
   }
   #project .All_pro .left_pro {
     width: 100%; 
@@ -786,7 +784,7 @@ footer{
   #project .All_pro .pro_right{
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 10%;
   }
   #project .All_pro  .pro_right .textBox{
     text-align: center;
@@ -799,7 +797,8 @@ footer{
     margin: 20px auto;
   }
   #project .pro_box1 .btn,
-  #project .pro_box2 .btn{
+  #project .pro_box2 .btn,
+  #project .pro_box3 .btn{
     left: 50%;
     transform: translateX(-50%);
   }
@@ -900,7 +899,7 @@ footer{
   /* PROJECT */
   #project{
     width: 100%;
-    height: 2800px;
+    height: 3650px;
     margin-bottom: 50px;
   }
   #project .inner{
@@ -909,14 +908,11 @@ footer{
   }
   #project .All_pro{
     width: 100%;
-    height: 1000px;
+    height: 1060px;
     margin-top: 100px;
     padding: 50px 10px 0;
     flex-direction: column;
     position: relative;
-  }
-  #project .pro_box2{
-    margin-top: 300px;
   }
   #project .All_pro .left_pro {
     width: 100%; 
@@ -939,7 +935,7 @@ footer{
   #project .All_pro .pro_right{
     width: 100%;
     position: relative;
-    top: 15%;
+    top: 10%;
   }
   #project .All_pro  .pro_right .textBox{
     text-align: center;
@@ -952,7 +948,8 @@ footer{
     margin: 20px auto;
   }
   #project .pro_box1 .btn,
-  #project .pro_box2 .btn{
+  #project .pro_box2 .btn,
+  #project .pro_box3 .btn{
     left: 50%;
     transform: translateX(-50%);
   }
