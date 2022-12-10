@@ -20,8 +20,12 @@ https://github.com/hyemiyeom/smasung-card_renuwal<br>
 https://github.com/hyemiyeom/renewal<br>
 3. 크롬 기본페이지 리뉴얼<br>
 https://github.com/hyemiyeom/chrome_homepage<br>
+4. 유로자전거 나라 서브페이지 리뉴얼<br>
+https://github.com/hyemiyeom/chrome_homepage<br>
+5. 이케아 메인 슬라이드 리뉴얼<br>
+https://github.com/hyemiyeom/chrome_homepage<br>
 
-( html / css / avascript / jQuery )
+( html / css / jQuery / photoshop )
 
 
 <h1>감사합니다!</h1>
