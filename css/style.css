@@ -363,7 +363,8 @@ div.sidebar .sidebar_gnb>li a{
 /* SECTION project BTN */
 #project .pro_box1 .btn,
 #project .pro_box2 .btn,
-#project .pro_box3 .btn{
+#project .pro_box3 .btn,
+#project .pro_box4 .btn{
   width: 150px;
   height: 60px;
   border: 1px solid #000;
@@ -375,7 +376,8 @@ div.sidebar .sidebar_gnb>li a{
 }
 #project .pro_box1 .btn:hover,
 #project .pro_box2 .btn:hover,
-#project .pro_box3 .btn:hover{
+#project .pro_box3 .btn:hover,
+#project .pro_box4 .btn:hover{
   background-color: #333;
 }
 #project .pro_box2 .btn a{
@@ -383,7 +385,8 @@ div.sidebar .sidebar_gnb>li a{
 }
 #project .pro_box1 .btn:hover a,
 #project .pro_box2 .btn:hover a,
-#project .pro_box3 .btn:hover a{
+#project .pro_box3 .btn:hover a,
+#project .pro_box4 .btn:hover a{
   color: #fff;
   display: block;
 }
@@ -493,6 +496,14 @@ div.sidebar .sidebar_gnb>li a{
 #project .pro_box3 .left_pro ul li:nth-child(4){
   background-image: url(../images/uro_main04.JPG);
 }
+#project .pro_box4 .left_pro ul li:nth-child(1){
+  background-image: url(../images/IKEA_slide1.JPG);
+  display: block;
+}
+#project .pro_box4 .left_pro ul li:nth-child(2){
+  background-image: url(../images/IKEA_slide2.JPG);
+}
+
 #project .All_pro .pro_right{
   width: 50%;
   height: 100%;
@@ -565,6 +576,20 @@ div.sidebar .sidebar_gnb>li a{
 #project .pro_box3  .pro_right .textBox .onColor .colorBox  >li:nth-child(4){
   background-color: #6f6f6f;
 }
+#project .pro_box4  .pro_right .textBox .onColor .colorBox >li:nth-child(1){
+  background-color: #fbd915;
+}
+#project .pro_box4  .pro_right .textBox .onColor .colorBox  >li:nth-child(2){
+  background-color: #db2612;
+}
+#project .pro_box4  .pro_right .textBox .onColor .colorBox  >li:nth-child(3){
+  background-color: #ffffff;
+  border: 1px solid #bbb;
+}
+#project .pro_box4  .pro_right .textBox .onColor .colorBox  >li:nth-child(4){
+  background-color: #333;
+}
+
 #project .All_pro  .pro_right .textBox .onColor .colorBox > li >ul{
   position: absolute;
   bottom: -30px;
@@ -747,7 +772,7 @@ footer{
   /* PROJECT */
   #project{
     width: 100%;
-    height: 4010px;
+    height: 5300px;
   }
   #project .inner{
     width: 100%;
@@ -796,7 +821,9 @@ footer{
   }
   #project .pro_box1 .btn,
   #project .pro_box2 .btn,
-  #project .pro_box3 .btn{
+  #project .pro_box3 .btn,
+  #project .pro_box4 .btn{
+    
     left: 50%;
     transform: translateX(-50%);
   }
@@ -897,8 +924,7 @@ footer{
   /* PROJECT */
   #project{
     width: 100%;
-    height: 3650px;
-    margin-bottom: 50px;
+    height: 4950px;
   }
   #project .inner{
     width: 100%;
@@ -947,7 +973,8 @@ footer{
   }
   #project .pro_box1 .btn,
   #project .pro_box2 .btn,
-  #project .pro_box3 .btn{
+  #project .pro_box3 .btn,
+  #project .pro_box4 .btn{
     left: 50%;
     transform: translateX(-50%);
   }
