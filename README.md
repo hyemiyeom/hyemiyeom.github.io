@@ -24,12 +24,14 @@ https://github.com/hyemiyeom/renewal<br>
 3. 크롬 기본페이지 리뉴얼<br>
 https://github.com/hyemiyeom/chrome_homepage<br>
 4. 이케아 메인 슬라이드 리뉴얼<br>
-https://github.com/hyemiyeom/chrome_homepage<br>
+https://github.com/hyemiyeom/IKE_main-slide-design
 <br>
+<p>SKILL : 
 <span><img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=HTML5&logoColor=white"/> </span>
 <span><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/> </span>
 <span><img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white"/> </span>
 <span><img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/></span>
+</p>
 
 
 
