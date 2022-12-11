@@ -183,6 +183,15 @@ header .top .sidebar .accodian_nav .nav_aux li:hover a{
   color: #333;;
   font-weight: bold;
 }
+header .top .sidebar .accodian_nav .login{
+  width: 230px;
+  margin: 0 auto;
+  display: flex;
+  display: none;
+}
+header .top .sidebar .accodian_nav .login li:not(:last-child){
+  margin-right: 30px;
+}
 header .top .sidebar .accodian_nav .label{
   display: flex;
   justify-content: space-between;
@@ -207,7 +216,7 @@ header .top .sidebar .accodian_nav .label li:hover a{
 
 /* SECTION */
 .slide_main{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin-top: -80px;
 }
@@ -230,7 +239,7 @@ header .top .sidebar .accodian_nav .label li:hover a{
   display: block;
   width: 100%;
   height: 100%;
-  text-indent: -9999px;
+  text-indent: -99999px;
 }
 .slide_main .main .conten2{
   padding: 10px;
@@ -478,7 +487,51 @@ header .top .sidebar .accodian_nav .label li:hover a{
   height: 100vh;
 }
 
+/* 태블릿 버전*/
+@media all and (min-width:769px) and (max-width:1023px){
+  .slide_main .main .conten1{
+    background-position: center;
+  }
+}
+/* 모바일 버전 */
+@media all and (max-width:767px) {
 
+  header .top .inner{
+    justify-content:flex-start;
+  }
+  header .top .logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .top .login{
+    display: none;
+  }
+  header .top .sidebar .accodian_nav .login{
+    width: 230px;
+    margin: 0 auto;
+    display: block
+  }
+  header .top .sidebar .accodian_nav .login li{
+    margin: 0;
+    float: left;
+  }
+  header .top .sidebar .accodian_nav .login li a{
+    color:rgb(129, 129, 129);
+  }
+  header .top .sidebar .accodian_nav .login li:hover a{
+    color: rgb(40, 117, 185);
+  }
+  header .top .sidebar .accodian_nav .label{
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  .slide_main .main .visual{
+    background-position: 50% 50%;  
+    background-size: contain;  
+  }
+}
 
 
 

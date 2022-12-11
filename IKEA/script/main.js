@@ -32,14 +32,14 @@ $(document).ready(function(){
 
 // 메인 슬라이드 auto
 
-  // var visualAutoSlide = setInterval(function(){
-  //   if(i == count-1){
-  //     i = 0;
-  //   }else{
-  //     i = i + 1;
-  //   }
-  //   autoFade();
-  // },4000);
+  var visualAutoSlide = setInterval(function(){
+    if(i == count-1){
+      i = 0;
+    }else{
+      i = i + 1;
+    }
+    autoFade();
+  },4000);
 
 // 메인 슬라이드 정지
 $(".visual").mouseenter(function(){
@@ -65,5 +65,4 @@ $(".visual").mouseleave(function(){
     $(".main .visual").stop().fadeOut(500);
     $(".main .visual").eq(i).stop().fadeIn(600);
   };
-
 });
