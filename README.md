@@ -23,9 +23,7 @@ https://github.com/hyemiyeom/smasung-card_renuwal<br>
 https://github.com/hyemiyeom/renewal<br>
 3. 크롬 기본페이지 리뉴얼<br>
 https://github.com/hyemiyeom/chrome_homepage<br>
-4. 유로자전거 나라 서브페이지 리뉴얼<br>
-https://github.com/hyemiyeom/chrome_homepage<br>
-5. 이케아 메인 슬라이드 리뉴얼<br>
+4. 이케아 메인 슬라이드 리뉴얼<br>
 https://github.com/hyemiyeom/chrome_homepage<br>
 <br>
 <span><img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=HTML5&logoColor=white"/> </span>
